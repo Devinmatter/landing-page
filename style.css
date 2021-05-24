@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "agave";
+  src: url("assets/fonts/Agave/agave\ regular\ Nerd\ Font\ Complete.ttf")
+    format("truetype");
+  src: url("assets/fonts/Agave/agave\ regular\ Nerd\ Font\ Complete\ Mono.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "daddy-time-mono";
+  src: url("assets/fonts/DaddyTimeMono/DaddyTimeMono\ Nerd\ Font\ Complete.ttf")
+    format("truetype");
+  src: url("assets/fonts/DaddyTimeMono/DaddyTimeMono\ Nerd\ Font\ Complete\ Mono.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hack";
+  src: url("assets/fonts/Hack/Hack\ Regular\ Nerd\ Font\ Complete.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +33,7 @@
 }
 
 body {
+  font-weight: normal;
   margin: 0;
   font-size: 1.3rem;
   line-height: 1.9em;
@@ -25,7 +54,6 @@ a {
 /* ----- header ----- */
 .header {
   background: #393e46;
-  color: #eeeeee;
   padding: 0.7rem 0;
   top: 0;
   right: 0;
@@ -34,6 +62,7 @@ a {
 }
 
 .header a {
+  font-family: "agave";
   color: #eeeeee;
 }
 
@@ -56,7 +85,8 @@ a {
 }
 
 .nav ul li a {
-  padding: 0px 5px;
+  margin: 0;
+  padding: 6px 18px;
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
@@ -74,6 +104,7 @@ a {
 
 /* ----- banner ----- */
 .banner {
+  font-family: "hack";
   width: 100%;
   height: 100vh;
   background: #a7bbc7;
@@ -113,7 +144,7 @@ a {
 
 .banner-content a:hover {
   color: #393e46;
-  background-color: #eeeeee;
+  background: #eeeeee;
 }
 
 @keyframes banner-transition {
@@ -145,6 +176,7 @@ a {
 
 /* ----- container ----- */
 .container {
+  font-family: "hack";
   width: 90%;
   max-width: 900px;
   margin: 2.5rem auto;
@@ -201,6 +233,9 @@ a {
   box-shadow: 6px 6px 10px rgba(57, 62, 70, 0.7);
 }
 
+.tech-card p {
+  font-family: "daddy-time-mono";
+}
 .tech-card a {
   padding: 3px 9px;
   text-transform: uppercase;
@@ -223,6 +258,8 @@ a {
 
 /* ----- footer ----- */
 .footer {
+  justify-content: center;
+  text-align: center;
   margin: 3rem 0 0 0;
   padding: 3rem 0;
   background: #393e46;
